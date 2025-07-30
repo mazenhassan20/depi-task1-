@@ -3,7 +3,7 @@
 
 # Add a user
 sudo useradd ali
-sudo passwd -d ali  # Remove password for testing (اختياري)
+#sudo passwd -d ali  # Remove password for testing 
 
 # Delete user (without home)
 sudo userdel ali
@@ -20,7 +20,7 @@ mkdir myfolder
 rm -rf myfolder 
 
 # Search for a file or dir
-find / -name "myfile.txt" 2>/dev/null
+find /home -name "myfile.txt" 2>/dev/null
 
 # Preview data in file
 echo "Hello from inside the file" > myfile.txt
@@ -33,7 +33,6 @@ alias c='clear'
 echo "alias c='clear'" >> ~/.bashrc
 
 # nano, history, date
-nano myfile.txt
 history | tail -n 5
 date
 
